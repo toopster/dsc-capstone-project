@@ -1,5 +1,2 @@
-/data.json
 /data
-ultrasuite_data.json
-ultrasuite_top40_data.json
-speech_commands_data.json
+*.json
