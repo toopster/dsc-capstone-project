@@ -138,8 +138,14 @@ Once downloaded (and processed if using the Jupyter notebooks), the data should 
 # Jupyter notebook containing code for a number of deep learning audio classifier models, with improving accuracy, that aim to predict a 
 keyword from a given audio sample of a child with a speech disorder or learning disability.
 
-notebook.pdf
-# A PDF version of the Jupyter notebooks above.
+1_business_case.pdf
+# A PDF version of the Jupyter notebook above.
+
+2_eda.pdf
+# A PDF version of the Jupyter notebook above. IMPORTANT NOTE: The output of certain cells has been cleared to keep the filesize as small as possible.  
+
+3_models.pdf
+# A PDF version of the Jupyter notebook above. IMPORTANT NOTE: The output of certain cells has been cleared to keep the filesize as small as possible.
 
 presentation.pdf
 # A non-technical presentation of the project findings.
