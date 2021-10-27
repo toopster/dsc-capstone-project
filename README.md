@@ -175,6 +175,22 @@ The project constitutes 4 main parts:
 
 4. **[Final Model Performance Evaluation](3_models.ipynb#final-model-performance-evaluation)**.
 
+## Conclusions and Recommendations
+
+Initial models did not generalise well and tended to overfit the training data. Subsequent changes to parameters significantly improved the training accuracy but, again were overfitting the training data.
+
+Whilst it does not have a high accuracy score, this final model using a Convolutional Neural Network produced the best results classifying over 70% of the “unseen” audio samples whilst minimising the overfitting to training data.
+
+The very nature of speech sound disorders mean that a model that has been simply trained on audio samples of "typical" speech will generally be more accurate than one that has been trained on audio samples of "atypical" speech as demonstrated above with the model comparison between the Speech Commands and Ultrasuite datasets.
+
+Given the eventual usage of this model, it is arguable the app would be more useful if it suggested three potential words in order of likelihood, giving the parent options of what the child might be trying to communicate.
+
+Recommendations for further work include:
+
+1. Continue to use other model architectures and enable to accept longer audio samples as these are more representative of atypical speech patterns.
+2. Source additional data in the form of further audio samples potentially even using the app as a means for gathering additional samples and improving the model.
+3. Use data augmentation when training the model, in particular the MixSpeech method that a weighted combination of features such as Mel Spectrograms with MFCCs.
+
 
 
 ## Requisite Environment and Python Libraries
