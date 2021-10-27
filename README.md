@@ -93,8 +93,37 @@ Ultrasuite is a collection of ultrasound and acoustic speech data from child spe
 
 The source data and audio samples used by the Jupyter notebooks have not been included in this GitHub repository and will need to be downloaded and stored in a folder entitled `data` within the local repository.  
 
-The code with the Jupyter notebook entitled `2_eda.ipynb` will do all the necessary downloading and preprocessing for you but, if you would like to shortcut this or have any issues downloading the data, a zip file containing the postprocessed audio samples for both datasets can be [downloaded here](https://drive.google.com/file/d/11lKYIZiwEQJ-pp0G1bJPHXLJLj8uKPqW/view?usp=sharing)
+The code with the Jupyter notebook entitled `2_eda.ipynb` will do all the necessary downloading and preprocessing for you but, if you would like to shortcut this or have any issues downloading the data, a zip file containing the processed audio samples for both datasets can be [downloaded here](https://drive.google.com/file/d/11lKYIZiwEQJ-pp0G1bJPHXLJLj8uKPqW/view?usp=sharing)
 
+Once downloaded (and processed if using the Jupyter notebooks), the data should be organised in the following folder structure:
+```
+└── data
+
+    ├── speech_commands_v0.02                 
+        # Raw downloaded format of the Speech Commands dataset containing 105,829 audio samples of 35 spoken keywords
+        organised into subfolders for each keyword.
+
+    ├── ultrasuite
+        # Raw downloaded format of the Ultrasuite dataset.
+
+        ├── core-upx
+        ├── core-uxssd
+        ├── core-uxtd
+        └── labels-uxtd-uxssd-upx
+
+    ├── ultrasuite_isolated
+        # Isolated audio segments of each utterance organised in subfolder relating to the child, session, source file.
+
+        ├── upx
+        ├── uxssd
+        └── uxtd
+
+    ├── ultrasuite_top35
+        # Isolated audio samples, padded to 1 second in duration, of each utterance for the top 35 keywords by number of samples, organised into subfolders for each keyword.
+
+    └── ultrasuite_transformed
+        # Isolated audio samples each utterance for the Ultrasuite dataset organised into subfolders for each keyword.    
+```
 
 
 ## Repository Overview
