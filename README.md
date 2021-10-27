@@ -122,7 +122,7 @@ Once downloaded (and processed if using the Jupyter notebooks), the data should 
         # Isolated audio samples, padded to 1 second in duration, of each utterance for the top 35 keywords by number of samples, organised into subfolders for each keyword.
 
     └── ultrasuite_transformed
-        # Isolated audio samples each utterance for the Ultrasuite dataset organised into subfolders for each keyword.    
+        # Isolated audio samples each utterance for the Ultrasuite dataset containing 33,800 audio samples of 991 spoken words organised into subfolders for each keyword.    
 ```
 
 
@@ -192,11 +192,12 @@ The following python libraries have been used as part of this project:
 * [scikit-learn](https://scikit-learn.org/)
 * [Tensorflow](https://www.tensorflow.org/)
 * [PyDub](https://pypi.org/project/pydub/)
-* Wave
-* Soundfile
-* Librosa
-* PathLib
-* Shutil
-* Collections
-* NLTK
-* JSON
+* [Wave](https://docs.python.org/3/library/wave.html)
+* [Soundfile](https://pypi.org/project/SoundFile/)
+* [Librosa](https://librosa.org/doc/latest/index.html)
+* [PathLib](https://docs.python.org/3/library/pathlib.html)
+* [Shutil](https://docs.python.org/3/library/shutil.html)
+* [Collections](https://docs.python.org/3/library/collections.html)
+* [Natural Language Toolkit - NLTK](https://www.nltk.org/)
+* [JSON](https://docs.python.org/3/library/json.html)
+* [IPython](https://ipython.readthedocs.io/en/stable/index.html)
