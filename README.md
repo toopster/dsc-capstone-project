@@ -14,24 +14,8 @@ For example, in self-harm behaviour, the child may be wanting to communicate tha
 
 ![Communication is a human right](images/communication-is-vital.png)
 
-### Types of communication
-There are various forms and stages of communication but, broadly speaking, communication can be split into two types:
-
-**Expressive Language –**
-
-Expressive language is the use of words to form sentences in order to communicate with other people.
-
-Difficulties in using expressive language to communicate can range from experiencing difficulties putting words in the right order to being unable to form words in a meaningful way that others can understand.
-
-When someone is unable to make use of expressive language, it can lead to frustration at not being able to express their needs and difficulty interacting with other people.
-
-**Receptive Language –**
-
-Receptive language is the understanding of expressive language. The use of receptive language is not dependent on being able to use expressive language. Some people may not be able to form words and sentences themselves, but are able to understand expressive language when it is used by others.
-
-This can range from being able to easily understand what others say, to being able to only understand key words and phrases, and then only when they are spoken clearly and slowly. Everyone is different; some people may be able to use both receptive and expressive language to different degrees, whilst others may be able to use one or neither.
-
 ### Communication techniques for people with learning disabilities
+
 Some people with learning disabilities have difficulties communicating with others when solely making use of expressive and receptive language.
 
 There are a variety of other techniques which have been developed to help support people for whom speech is difficult, for example:
@@ -41,10 +25,6 @@ There are a variety of other techniques which have been developed to help suppor
 * Speech and language therapy
 
 ![Makaton signs and PECS symbols examples](images/makaton-pecs-symbols.png)
-
-People with learning disabilities often interpret body language and non-verbal communication in understanding simple everyday interactions.
-
-It is essential when communicating with someone with a learning disability to give them time to take in what is being said, and to communicate more slowly than you may normally in order to allow them to process what it is that you are communicating.
 
 It is often hard to know what support is available to help people with learning disabilities communicate more easily.
 
@@ -56,7 +36,7 @@ Using visual guides or cues to aide communication is one important way of suppor
 
 The purpose of this project is to use Data Science and deep learning techniques to build a model that can suitably classify audio samples from an individual with a speech disorder or with a severe learning disability that impacts speech.
 
-The eventual aim being a tool or app that helps parents of children like Martha with a speech disorder or severe learning disability support their child's communication.
+The eventual aim being a tool or app that helps parents of a child with a speech disorder or severe learning disability support their communication.
 
 With adequately supported communication, their child will be better able to:
 
