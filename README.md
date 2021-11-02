@@ -73,7 +73,7 @@ Ultrasuite is a collection of ultrasound and acoustic speech data from child spe
 
 The source data and audio samples used by the Jupyter notebooks have not been included in this GitHub repository and will need to be downloaded and stored in a folder entitled `data` within the local repository.  
 
-The code with the Jupyter notebook entitled `2_eda.ipynb` will do all the necessary downloading and preprocessing for you but, if you would like to shortcut this or have any issues downloading the data, a zip file containing the processed audio samples for both datasets can be [downloaded here](https://drive.google.com/file/d/11lKYIZiwEQJ-pp0G1bJPHXLJLj8uKPqW/view?usp=sharing)
+The code with the Jupyter notebooks entitled `2_data_acquistion.ipynb` and `3_preprocessing.ipynb` will do all the necessary downloading and preprocessing for you but, if you would like to shortcut this or have any issues downloading the data, a zip file containing the processed audio samples for both datasets can be [downloaded here](https://drive.google.com/file/d/11lKYIZiwEQJ-pp0G1bJPHXLJLj8uKPqW/view?usp=sharing)
 
 Once downloaded (and processed if using the Jupyter notebooks), the data should be organised in the following folder structure:
 ```
@@ -108,24 +108,30 @@ Once downloaded (and processed if using the Jupyter notebooks), the data should 
 
 ## Repository Overview
 ```
-1_business_case.ipynb  
-# Jupyter notebook containing the business case, project purpose and approach.
+1_overview.ipynb  
+# Jupyter notebook containing the business case, project purpose and exploratory data analysis (EDA).
 
-2_eda.ipynb
-# Jupyter notebook containing code for data download, discovery, audio sample isolation, transformation and EDA.
+2_data_acquisition.ipynb
+# Jupyter notebook containing code for downloading the datasets.
 
-3_models.ipynb
+3_preprocessing.ipynb
+# Jupyter notebook containing code for audio sample isolation, transformation and preprocessing ready for training the models.
+
+4_models.ipynb
 # Jupyter notebook containing code for a number of deep learning audio classifier models, with improving accuracy, that aim to predict a 
 keyword from a given audio sample of a child with a speech disorder or learning disability.
 
-1_business_case.pdf
+1_overview.pdf
 # A PDF version of the Jupyter notebook above.
 
-2_eda.pdf
-# A PDF version of the Jupyter notebook above. IMPORTANT NOTE: The output of certain cells has been cleared to keep the filesize as small as possible.  
+2_data_acquisition.pdf
+# A PDF version of the Jupyter notebook above.
 
-3_models.pdf
+3_preprocessing.pdf
 # A PDF version of the Jupyter notebook above. IMPORTANT NOTE: The output of certain cells has been cleared to keep the filesize as small as possible.
+
+4_models.pdf
+# A PDF version of the Jupyter notebook above.
 
 presentation.pdf
 # A non-technical presentation of the project findings.
@@ -136,6 +142,9 @@ presentation.pdf
     ├── communication-is-vital.png
     ├── makaton-pecs-symbols.png
     └── martha-says-hello.jpeg
+└── shared_functions
+    └── preprocessing.py
+        # Python file containing shared functions used by multiple Jupyter notebooks
 ```
 
 
@@ -153,13 +162,13 @@ The initial plan was to use both the Speech Commands dataset combined with the U
 
 The project constitutes 4 main parts:
 
-1. The **[Business Case and Project Purpose](1_business_case.ipynb)**.
+1. The **[Business Case, Project Purpose and Exploratory Data Analysis(EDA)](1_overview.ipynb)** to review, quantify and validate the audio sample data available in each of the datasets. 
 
-2. Initial **[Exploratory Data Analysis](2_eda.ipynb)** to review, quantify and validate the audio sample data available in each of the datasets.  This section also includes some steps to prepare the data for modelling such as...
+2. **[Data Acquisitions](2_data_acquistion.ipynb)** includes some code and instructions to download the datasets.
 
-3. The creation, refinement through iteration, validation and evaluation of **[Deep Learning Neural Network Models](index.ipynb#deep-learning-neural-networks)** that can classify a 1 second audio sample from a child with a speech disorder.
+3. **[Data Preprocessing](3_preprocessing.ipynb)** presents code and instructions for preprocessing each dataset including steps to splice, pad, cleanse and arrange the audio samples ready for training the models.
 
-4. **[Final Model Performance Evaluation](3_models.ipynb#final-model-performance-evaluation)**.
+4. The creation, refinement through iteration, validation and evaluation of **[Deep Learning Neural Network Models](4_models.ipynb)** that can classify a 1 second audio sample from a child with a speech disorder including **[Final Model Performance Evaluation](4_models.ipynb#final-model-performance-evaluation)**.
 
 ## Conclusions and Recommendations
 
