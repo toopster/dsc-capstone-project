@@ -141,6 +141,7 @@ presentation.pdf
     └── martha-umbrella.wav
 └── images
     ├── communication-is-vital.png
+    ├── google-recorder-app.png
     ├── makaton-pecs-symbols.png
     └── martha-says-hello.jpeg
 └── shared_functions
