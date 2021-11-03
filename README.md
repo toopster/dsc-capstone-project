@@ -137,7 +137,8 @@ presentation.pdf
 # A non-technical presentation of the project findings.
 
 └── audio
-    └── martha-frog.wav
+    ├── martha-frog.wav
+    └── martha-umbrella.wav
 └── images
     ├── communication-is-vital.png
     ├── makaton-pecs-symbols.png
